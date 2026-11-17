@@ -1,0 +1,10 @@
+[package]
+name = "budget_importer"
+version = "0.0.1"
+edition = "2024"
+
+[dependencies]
+csv = "1.4"
+serde = { version = "1", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde"] }
+reqwest = { version = "0.13", features = ["blocking", "json"] }
